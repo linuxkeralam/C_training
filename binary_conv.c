@@ -1,12 +1,19 @@
 #include <stdio.h>
-
-void binary_conv(int num)
+int bin_number[32];
+void main()
 {
-	int binary=0;
-	while( num != 0 ) {
-	binary = binary * 10 + (num % 2);
-	num = num / 2;
-	}
-	printf("Binary is - \t%d \n",binary);
-	
-}	
+    int number,i,patt=1;
+    printf("Enter a number :");
+    scanf("%d",&number);
+    for(i=31;i>0;i--) {
+        bin_number[i]=number % 2;
+        number = number / 2;
+        if ( number == 0 ) {
+            break;
+        }
+    }
+    for(i=0;i<32;i++) {
+        printf("%d",bin_number[i]);
+    }
+    printf("\n");
+}

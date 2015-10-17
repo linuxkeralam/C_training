@@ -1,36 +1,35 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<unistd.h>
-#include<fcntl.h>
-#include<sys/types.h>
-#include<sys/stat.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fcntl.h>
 
-int main(int argc, char** argv[])
+void main(int argc,char **argv)
 {
-	int fd,fd1;
-	char* buff;
-	if ( argc != 3 )
-	{
-		printf(" Wrong Usage \n");
-		exit(0);	
-	}
-	fd = open(argv[1], O_RDONLY);
-	if ( fd == -1)
-	{
-		perror("Unable to open file - ");
-	}
-	fd1 = open(argv[2], O_CREAT | O_WRONLY, S_IRUSR | S_IWUSR);
-	if ( fd1 == -1)
-	{
-		perror("Unable to open file - ");
-	}
-	
-	while ( (read(fd,&buff,1)) == 1)
-	{
-		//`printf("in while");
-		write(fd1,&buff,1);
-	}
-	
-	close(fd);
-	close(fd1);
+    int fd,fd1,nread;
+    char *c;
+    if ( argc != 3 )
+    {
+        printf("Usage: %s <Source file> <Destination file>\n",argv[0]);
+        exit(0);
+    }
+    if ( (fd = open(argv[1], O_RDONLY )) == -1 ) 
+    {
+        perror("Could not open");
+        exit(1);
+    }
+    if ( (fd1 = open(argv[2], O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR )) == -1 ) 
+    {
+        perror("Could not open");
+        exit(1);
+    }
+    //o = read(n,&c,1);
+    while ( (nread = read(fd,&c,1)) == 1 ) {
+        //o = read(n,&c,1);
+        //printf("%c",*c);
+        write(fd1,&c,1);
+    }
+    close(fd);
+    close(fd1);
 }

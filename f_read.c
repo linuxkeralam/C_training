@@ -3,33 +3,30 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/types.h>
-#include <sys/stat.h>
+#include <errno.h>
 
-
-int main(int argc, char **argv[])
+int main(int argc, char** argv)
 {
-	int i,fdes;
-	char buff[20];
-	//const char* filename[]=argv[1];
-	/*if ( argc != 2 )
-	{
-		write(2,"Error Wrong usage",17);
-		printf("Usage:\n read_file <Filename>");
-		exit(0);
-	}*/
-	/*if (fdes=open(filename,O_RDONLY) == -1 )
-		{
-			perror("Unable to open file");
-			exit(1);
-		}*/
-	fdes=open("sam",O_RDONLY);
-	printf("\nFdes : %d",fdes);
-	i=read(fdes,buff,20);
-	printf("\nread bytes : %d",i);
-	write(1,buff,20);
-	close(fdes);
-	
-	//printf("No of command line para : %d\n",argc);
-	//for(i=0;i<argc;i++)
-		//printf("argv[%d] - %s\n",i,argv[i]);
+    int fd;
+    char c;
+    char str[100];
+    printf("opening file-%s", argv[1]);
+    fd = open(argv[1], O_RDWR);
+    if (fd == -1){
+        perror(argv[1]);
+        exit(errno);
+    }
+   
+    read(0,str,100);
+    printf("%s\n",str);
+    
+    write(fd,&str,100);
+    while( read(fd,&c,1) == 1){
+        printf("%c",c);
+    //write(2,&c,1);
+    }
+        printf("\n");
+    close(fd);
+
+    fprintf(stdout, "from fprintf");
 }

@@ -1,54 +1,59 @@
 #include <stdio.h>
-void read_mat(int *);
-void read_mat_dp(int **ptr);
+
+void read_mat(int matr[2][3]);
+void read_mat_ptr(int *matr);
+void read_mat_dptr(int **matr);
+
 void main()
 {
-	int *a;
-	b=10;
-	int mat[3][3] = {{11,12,13},{21,22,23},{31,32,33}},i,j;
-
-	printf("The Matrix 3X3 \n");
-	for (i=0;i<3;i++) {
-		for (j=0;j<3;j++) {
-		printf("%d\t",mat[i][j]);
-		}
-	printf("\n");
-	}
-	read_mat(mat);
-	read_mat_dp(mat);
+    int mat[2][3]={{1,2,3},{22,33,44}};
+    printf("--------------------------------\n");
+    printf("The array pointer mat - %p\n",mat);
+    printf("--------------------------------\n");
+    read_mat(mat);
+    printf("--------------------------------\n");
+    read_mat_ptr(mat);
+    printf("--------------------------------\n");
+    read_mat_dptr(mat);
+    printf("--------------------------------\n");
 }
-
-void read_mat(int *ptr)
+/* Using the normal way of passing the matrix */
+void read_mat(int matr[2][3])
 {
-	int i,j,*mat;
-	mat = (int *)ptr;
-	printf("\n");
-
-	for (i=0;i<3;i++) {
-		//mat = mat+(i*3);
-		for (j=0;j<3;j++) {
-		printf("%d\t",*(mat+(i*3)+j));
-		}
-	printf("\n");
-	}
+    int i,j;
+    for(i=0;i<2;i++) {
+        printf("\n");
+        for(j=0;j<3;j++) {
+            printf("%d\t",matr[i][j]);
+        }
+        printf("\n");
+    }
 }
 
-void read_mat_dp(int **ptr)
+/* Passing a single pointer to access the matrix*/
+void read_mat_ptr(int *matr)
 {
-	int i,j,*mat[3];
-	//mat = (int **)ptr;
-	for(i=0;i<3;i++)
-		mat[i]=(int *)ptr+i;
-	printf("\n");
-
-	for (i=0;i<3;i++) {
-		//mat = mat+(i*3);
-		for (j=0;j<3;j++) {
-		printf("%d\t",**(mat+(i*3)+j));
-		//printf("%d\t",**(ptr+(i*3)+j));
-		//printf("%d\t",mat[i][j]);
-		}
-	printf("\n");
-	}
+    int i,j;
+    for(i=0;i<2;i++) {
+        printf("\n");
+        for(j=0;j<3;j++) {
+            printf("%d\t",*(matr++));
+        }
+        printf("\n");
+    }
 }
 
+/* Using a double pointer to access the matrix*/
+void read_mat_dptr(int **matr)
+{
+    int *index[2],i,j;
+    for(i=0;i<2;i++) // This is kind assigning boundaries
+        index[i] = (int *)matr + 3*i; // Assigning pointer to array of a 2d array
+    for(i=0;i<2;i++) {
+        printf("\n");
+        for(j=0;j<3;j++) {
+            printf("%d\t",index[i][j]);
+        }
+        printf("\n");
+    }
+}
