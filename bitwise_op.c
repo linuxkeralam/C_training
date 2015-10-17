@@ -3,8 +3,8 @@
 //void binary_con(int);
 void main()
 {
-	int b=0x1,i;
-	for(i=0;i<31;i++) {
+	int b=10101111,i;
+	for(i=0;i<4;i++) {
 	b = b << 1;
 	binary_conv(b);
 	printf("\t%x\n",b);

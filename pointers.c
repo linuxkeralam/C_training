@@ -2,27 +2,23 @@
 #include <stdlib.h>
 
 main()
-{
-    //int *ptr;
-    int *aptr,i,j=9;
-    int ptr[]={1,2,3,4,5,6,7,8,9,10};
-    //aptr = (int *) malloc(40);
-    for (i=0;i<10;i++) {
-        printf("%d\n",ptr[i]);
-        //*aptr = 12;
-        //j--;
-        //aptr++;
-    }
-    aptr=ptr;
-    for (i=0;i<10;i++) {
-        //*aptr = 100;
-        printf("%d\n",aptr[i]);
-        //aptr++;
-    }
-    /*for (i=0;i<10;i++) {
-        printf("%d\n",*aptr);
-        aptr++;
-    }*/
 
-    //free(aptr);
+{
+	int *ptr, num=10, num1=20;
+	printf("Pointer - ptr = %u num = %d num1= %d\n",ptr,num,num1);
+	printf("num - ptr = %u\n",&num);
+	ptr = &num;
+	printf("Pointer - ptr = %u num = %d num1= %d\n",ptr,num,num1);
+	printf("Content of ptr - %d\n",*ptr);
+	printf("num - ptr = %u\n",&num1);
+	//ptr = &num1;
+	ptr++;
+	printf("Pointer - ptr = %u num = %d num1= %d\n",ptr,num,num1);
+	printf("Content of ptr - %d\n",*ptr);
+	ptr++;
+	printf("Pointer - ptr = %u num = %d num1= %d\n",ptr,num,num1);
+	printf("Content of ptr - %d\n",*ptr);
+	*ptr = 123;
+
+
 }
