@@ -1,0 +1,1070 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f36\fnil\fcharset0\fprq0{\*\panose 00000000000000000000}TimesNewRoman;}{\f37\fnil\fcharset0\fprq0{\*\panose 00000000000000000000}CourierNew;}{\f38\fnil\fcharset0\fprq0{\*\panose 00000000000000000000}Calibri;}
+{\f121\froman\fcharset238\fprq2 Times New Roman CE;}{\f122\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f124\froman\fcharset161\fprq2 Times New Roman Greek;}{\f125\froman\fcharset162\fprq2 Times New Roman Tur;}
+{\f126\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f127\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f128\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f129\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;
+\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}}{\*\latentstyles\lsdstimax156\lsdlockeddef0}{\*\rsidtbl \rsid1051041\rsid13843573}
+{\*\generator Microsoft Word 11.0.5604;}{\info{\author rtos}{\operator rtos}{\creatim\yr2008\mo5\dy15\hr11\min19}{\revtim\yr2008\mo5\dy15\hr11\min27}{\version3}{\edmins8}{\nofpages20}{\nofwords5103}{\nofchars29093}{\*\company rtos22}{\nofcharsws34128}
+{\vern24689}}\widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3\jcompress\viewkind4\viewscale100\nolnhtadjtbl\rsidroot1051041 \fet0
+\sectd \linex0\sectdefaultcl\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}
+{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 
+\fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\f36\fs20\insrsid13843573 
+\par 
+\par 
+\par }{\f37\fs28\insrsid13843573 \tab \tab \tab \tab \tab \tab \tab \tab FAQ -2     
+\par 
+\par 
+\par ANSWER KEY/EXPLANATION
+\par }{\f37\fs20\insrsid13843573 1. Ans. (c) Since Comma operator (,) is used, the expressions are
+\par evaluated from left to right and the entire expression assumes
+\par the value of the last one evaluated. Also i/10.0 is the rightmost
+\par expression hence it is evaluated and its value is assigned to
+\par a[i]. The first printf in the program has no effect on the output
+\par (See next question).
+\par 2. Ans. (b) Since first statement 'func;' has no effect on the
+\par output and the second statement
+\par 'func();' is a normal function call which prints the message(One
+\par time) as specified.
+\par 3. Ans. (b) Since any non-zero value will be interpreted as -1.
+\par 4. Ans. (d) Since a and b are both of type int, so the result of a/b
+\par was of type int. That was
+\par converted to type float when you assigned it to c, but the
+\par conversion took place after the
+\par division, not before.
+\par 5. Ans. (c) Since a variable (an identifier) can start with an
+\par underscore.
+\par 6. Ans. (b) Since this is a DOS limit.
+\par 7. Ans. (b) This is one of the method used for calling functions
+\par through pointers. Here foo is a pointer to a function (printf)
+\par that accepts an argument which is a pointer to a character. Also
+\par it accepts variable number of arguments and returns an integer
+\par value.
+\par 8. Ans. (d) This is another method used for calling functions
+\par through pointers. Here foo is a pointer to a function (printf)
+\par that accepts an argument which is a pointer to a character. Also
+\par it accepts variable number of arguments and returns an integer
+\par value. Also 'printf' returns theno. of bytes output which is
+\par stored in the variable 'i' i.e. i=14 (including '\\n' character).
+\par 9. Ans. (a) Since Too many default cases i.e. the compiler
+\par encountered more than one default statement in a single switch.
+\par 10. Ans (b)
+\par 11. Ans. (d) Since if ((3+3 > 5 ? 3 : 5) > 5) is FALSE. But a
+\par macro is expanded during the compilation process itself. Thus
+\par temp=a; will not be executed and the remaining statements a=b;
+\par and b=temp; are executed in the normal way.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 47
+\par }{\f37\fs20\insrsid13843573 12. Ans. (c) Preprocessor directives can be defined anywhere in
+\par the program but just before its use. C will automatically do the
+\par concatenation for you on very long strings, resulting in nicer
+\par looking programs. According to K&R (applies to ALL C compilers),
+\par a string constant consists of exactly one string unit, containing
+\par double quotes, text, double quotes ("like this"). You must use
+\par the backslash(\\) as a continuation character in order to extend a
+\par string constant across line boundaries.
+\par Thus the above printf statement could be re-written (K&R Style)
+\par as follows :
+\par printf("First" \\
+\par "Second" \\
+\par "Third");
+\par 13. Ans. (c) Here the address of the variable 'temp' is
+\par returned to the variable 'val' in the main
+\par program but the variable 'temp' is local to the function. As we
+\par know every function involves built-in stack and whenever a
+\par function is called Stack Pointer (SP, which is a register pseudovariable)
+\par value changes.
+\par 14. Ans. (d) Though both <struct type name> and <structure
+\par variables> are optional, one of the two must appear. In the above
+\par program, <structure variable> i.e. var is used. (2 decimal places
+\par or) 2-digit precision of 9.76723 is 9.77
+\par 15. Ans. (d) Both <struct type name> and <structure variables>
+\par are optional. Thus the structure
+\par defined in the above program has no use and program executes in
+\par the normal way.
+\par 16. Ans. (c) The members of a structure variable can be
+\par assigned initial values in much the same
+\par manner as the elements of an array. The initial values must
+\par appear in order in which they will be assigned to their
+\par corresponding strucutre members, enclosed in braces and separated
+\par by commas.
+\par 17. Ans. (c) In the above program, values is the user-defined
+\par structure type or the new user-defined data type. Structure
+\par variables can then be defined in terms of the new data type.
+\par 18. Ans. (a) C language does not permit the initialization of
+\par individual structure members within the template. The
+\par initialization must be done only in the declaration of the actual
+\par variables. The correct way to initialize the values is shown in
+\par earlier answers.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 48
+\par }{\f37\fs20\insrsid13843573 19. Ans. (d) Illustrating 3 different ways of declaring
+\par the structres : first, second and third are the user-defined
+\par structure type. s1, s2 and s3 are structure variables. Also
+\par an expression of the form ++variable.member is equivalent to
+\par ++(variable.member), i.e. ++ operator will apply to the
+\par structure member, not the entire structure variable.
+\par 20. Ans. (b) Since value of the member 'i' can be accessed
+\par using var.i, vptr->i and (*vptr).i
+\par Similarly 5th value of the member 'val' can be accessed
+\par using var.val[4], *(var.val+4), vptr->val[4], *(vptr-
+\par >val+4), (*vptr).val[4] and *((*vptr).val+4).
+\par 21. Ans. (c) This program illustrates the transfer of a
+\par structure to a function by passing the structure's address
+\par (a pointer) to the function.
+\par 22. Ans. (b) This program illustrates the transfer of a
+\par structure to a function by value. Also the altered structure
+\par is now returned directly to the calling portion of the
+\par program.
+\par 23. Ans. (d) This program illustrates the transfer of a
+\par structure to a function by passing the structure's address
+\par (a pointer) to the function. Also the altered structure is
+\par now returned directly to the calling portion of the program.
+\par 24. Ans. (c) This program illustrates the implementation
+\par of a nested structure i.e. structure inside another
+\par structure.
+\par 25. Ans. (d) An entire structure variable can be assigned
+\par to another structure variable, provided both variables have
+\par the same composition.
+\par 26. Ans. (c) It is sometimes desirable to include within a
+\par structure one member i.e. a pointer to the parent structure
+\par type. Such structures are known as Self-Referencial
+\par structures. These structures are very useful in applications
+\par that involve linked data structures, such as lists and
+\par trees. [A linked data structure is not confined to some
+\par maximum number of components. Rather, the data structure can
+\par expand or contract in size as required.]
+\par 27. Ans. (d) Since all the above structure declarations
+\par are valid in C.
+\par 28. Ans. (c) The above program produces erroneous output
+\par (which is machine dependent). In effect,a union creates a
+\par storage location that can be used by any one of its members
+\par at a time. When a different member is assigned a new value,
+\par the new value supercedes the previous member's value.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 49
+\par }{\f37\fs20\insrsid13843573 [NOTE : The compiler allocates a piece of storage that is
+\par large enough to hold the largest
+\par variable type in the union i.e. all members share the same
+\par address.]
+\par 29. Ans. (b) Since int (2 bytes) + float (4 bytes) = (6
+\par bytes) + Largest among union is int (2 bytes) is equal to (8
+\par bytes). Also the total number of bytes the array 'temp2'
+\par requires :
+\par (8 bytes) * (5 bytes) = (40 bytes).
+\par 30. Ans. (b) The four fields within 'v' require a total of
+\par 10 bits and these bits can be accommodated within the first
+\par word(16 bits). Unnamed fields can be used to control the
+\par alignment of bit fields within a word of memory. Such fields
+\par provide padding within the word.
+\par [NOTE : Some compilers order bit-fields from righ-to-left
+\par (i.e. from lower-order bits to high-order bits) within a
+\par word, whereas other compilers order the fields from left-toright
+\par (high-order to low-order bits).
+\par 31. Ans. (c)a=1 (1 bit: 0 or 1)
+\par b=3 (2 bits: 00 or 01 or 10 or 11),
+\par c=7 (3 bits: 000 or 001 or 010 or 011 or 100 or 101
+\par or 110 or 111)
+\par d=15 (4 bits: 0000 or 0001 or 0010 or 0011 or 0100 or
+\par 0101 or 0110 or 0111 or 1000 or
+\par 1001 or 1010 or 1011 or 1100 or 1101 or 1110 or 1111)
+\par 32. Ans. (a) Since we cannot take the address of a bit
+\par field variable i.e. Use of pointer to access
+\par the bit fields is prohibited. Also we cannot use 'scanf'
+\par function to read values into a bit field as it requires the
+\par address of a bit field variable. Also array of bit-fields
+\par are not permitted and a function cannot return a bit field.
+\par 33. Ans. (d) Here the bit field variable 'a' will be in
+\par first byte of one word, the variable 'i' will be in the
+\par second word and the bit fields 'b' and 'c' will be in the
+\par third word. The variables 'a', 'b' and 'c' would not get
+\par packed into the same word. [NOTE: one word=2 bytes]
+\par 34. Ans. (d)
+\par 35. Ans. (a)
+\par 36. Ans. (b)
+\par 37. Ans. (d)
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 50
+\par }{\f37\fs20\insrsid13843573 38. Ans. (c)
+\par 39. Ans. (c)
+\par 40. Ans. (a)
+\par 41. Ans. (b)
+\par 42. Ans. (b)
+\par 43. Ans. (b)
+\par 44. Ans. (b)
+\par 45. Ans. (d)
+\par 46. Ans. (a)
+\par 47. Ans. (a)
+\par 48. Ans. (a)
+\par 49. Ans. (c)
+\par 50. Ans. (c)
+\par 51. Ans. (b)
+\par 52. Ans. (c)
+\par 53. Ans. (d)
+\par 54. Ans. (c)
+\par 55. Ans. (c)
+\par 56. Ans. (c)
+\par 57. Ans. (c)
+\par 58. Ans. (c)
+\par 59. Ans. 23
+\par 60. Ans. (c)
+\par 61. Ans. (c)
+\par 62. Ans. (c)
+\par 63. Ans. (c) Compiler dependent
+\par 64. Ans. (d)
+\par 65. Ans. (b)
+\par 66. Ans. (b)
+\par 67. Ans. (c)
+\par 68. Ans. (c)
+\par 69. Ans. (a)
+\par 70. Ans. (b)
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 51
+\par }{\f37\fs20\insrsid13843573 71. Ans. (a)
+\par 72. Ans. (c)
+\par 73. Ans. (c)
+\par 74. Ans. (c)
+\par 75. Ans. (d)
+\par 76. Ans. (d)
+\par 77. Ans. (b)
+\par 78. Ans. (a)
+\par 79. Ans. (d)
+\par 80. Ans. (b)
+\par 81. Ans. (b)
+\par 82. Ans. (c)
+\par 83. Ans. (c)
+\par 84. Ans. (b)
+\par 85. Ans. (d)
+\par 86. Ans. (a)
+\par 87. Ans. (a)
+\par 88. Ans. (c)
+\par 89. Ans. (c)
+\par 90. Ans. (b)
+\par 91. Ans. (b)
+\par 92. Ans. (d)
+\par 93. Ans. (c)
+\par 94. Ans. (c)
+\par 95. Ans. (a)
+\par 96. Ans. (c)
+\par 97. Ans. (c)
+\par 98. Ans. (c)
+\par 99. Ans. (d)
+\par 100. Ans. (c)
+\par 101. Answer: Compliler Error: Can\rquote t dereference void
+\par Pointer directly.
+\par Explanation:
+\par Void pointer is a generic pointer type. No pointer arithmetic
+\par can be done on it. Void pointers are normally used
+\par for,
+\par 1. Passing generic pointers to functions and returning such
+\par pointers.
+\par 2. As a intermediate pointer type.
+\par 3. Used when the exact pointer type will be known at a later
+\par point of time.
+\par 102. Answer: Garbage values.
+\par Explanation:
+\par An identifier is available to use in program code from the
+\par point of its declaration.
+\par So expressions such as i = i++ are valid statements. The i, j
+\par and k are automatic variables and so they contain
+\par some garbage value. Garbage in is garbage out (GIGO).
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 52
+\par }{\f37\fs20\insrsid13843573 103. Answer: i = 1 j = 1 k = 1
+\par Explanation:
+\par Since static variables are initialized to zero by default.
+\par 104. Answer: Garbage values
+\par Explanation:
+\par The inner printf executes first to print some garbage value.
+\par The printf returns no of characters printed and this
+\par value also cannot be predicted. Still the outer
+\par printf prints something and so returns a non-zero
+\par value. So it encounters the break statement and comes
+\par out of the while statement.
+\par 105. Answer: 10 9 8 7 6 5 4 3 2 1 0 65535 65534\'85..
+\par Explanation:
+\par Since i is an unsigned integer it can never become negative. So
+\par the expression i-- >=0 will always be true, leading
+\par to an infinite loop.
+\par 106. Answer: Garbage-value 0
+\par Explanation:
+\par The value of y%2 is 0. This value is assigned to x. The
+\par condition reduces to if (x) or in other words if(0)
+\par and so z goes uninitialized.
+\par Thumb Rule: Check all control paths to write bug free code.
+\par 107. Answer: 4
+\par Explanation:
+\par *a and -*a cancels out. The result is as simple as 1
+\par + 3 = 4 !
+\par 108. Answer: 10
+\par Explanation:
+\par The macro expands and evaluates to as:
+\par x+2*y-1 => x+(2*y)-1 => 10
+\par 109. Answer: 1
+\par Explanation:
+\par Note the semicolon after the while statement. When the value of
+\par i becomes 0 it comes out of while loop. Due to postincrement
+\par on i the value of i while printing is 1.
+\par 110. Answer: -1
+\par Explanation:
+\par Unary + is the only dummy operator in C. So it has no effect on
+\par the expression and now the while loop is,
+\par while(i--!=0) which is false and so breaks out
+\par of while loop. The value \endash 1 is printed due to the
+\par post-decrement operator.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 53
+\par }{\f37\fs20\insrsid13843573 111. Answer: Line no 5: Error: Lvalue required
+\par Line no 6: Cannot apply leftshift to float
+\par Line no 7: Cannot apply mod to float
+\par Explanation:
+\par Enumeration constants cannot be modified, so you cannot apply
+\par ++.
+\par Bit-wise operators and % operators cannot be applied on float
+\par values.
+\par fmod() is to find the modulus values for floats as % operator
+\par is for ints.
+\par 112. Answer: Compiler error: unknown type integer
+\par Compiler error: undeclared function write
+\par Explanation:
+\par Pascal keyword doesn\rquote t mean that pascal code can be used. It
+\par means that the function follows Pascal argument
+\par passing mechanism in calling the functions.
+\par 113. Answer: 10 11 12 13
+\par 12 11 10 13
+\par Explanation:
+\par Pascal argument passing mechanism forces the arguments to be
+\par called from left to right. cdecl is the normal C
+\par argument passing mechanism where the arguments are
+\par passed from right to left.
+\par 114. Answer -128
+\par Explanation
+\par Notice the semicolon at the end of the for loop. THe initial
+\par value of the i is set to 0. The inner loop executes
+\par to increment the value from 0 to 127 (the positive
+\par range of char) and then it rotates to the negative
+\par value of -128. The condition in the for loop fails
+\par and so comes out of the for loop. It prints the
+\par current value of i that is -128.
+\par 115. Answer infinite loop
+\par Explanation
+\par The difference between the previous question and this one is
+\par that the char is declared to be unsigned. So the i++
+\par can never yield negative value and i>=0 never becomes
+\par false so that it can come out of the for loop.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 54
+\par }{\f37\fs20\insrsid13843573 116. Answer Compiler error: Multiple declaration for
+\par error
+\par Explanation
+\par The name error is used in the two meanings. One means that it
+\par is a enumerator constant with value 1. The another
+\par use is that it is a type name (due to typedef) for
+\par enum errorType. Given a situation the compiler cannot
+\par distinguish the meaning of error to know in what
+\par sense the error is used:
+\par error g1;
+\par g1=error;
+\par // which error it refers in each case?
+\par When the compiler can distinguish between usages then it will
+\par not issue error (in pure technical terms, names can
+\par only be overloaded in different namespaces).
+\par Note: the extra comma in the declaration,
+\par enum errorType\{warning, error, exception,\}
+\par is not an error. An extra comma is valid and is provided just
+\par for programmer\rquote s convenience.
+\par 117. Answer: 1
+\par Explanation
+\par The three usages of name errors can be distinguishable by the
+\par compiler at any instance, so valid (they are in
+\par different namespaces).
+\par Typedef struct error\{int warning, error, exception;\}error;
+\par This error can be used only by preceding the error by struct
+\par kayword as in:
+\par struct error someError;
+\par typedef struct error\{int warning, error, exception;\}error;
+\par This can be used only after . (dot) or -> (arrow) operator
+\par preceded by the variable name as in :
+\par g1.error =1;
+\par printf("%d",g1.error);
+\par typedef struct error\{int warning, error,
+\par exception;\}error;
+\par This can be used to define variables without using the
+\par preceding struct keyword as in:
+\par error g1;
+\par Since the compiler can perfectly distinguish between these
+\par three usages, it is perfectly legal and valid.
+\par Note
+\par This code is given here to just explain the concept behind. In
+\par real programming don\rquote t use such overloading of names.
+\par It reduces the readability of the code. Possible
+\par doesn\rquote t mean that we should use it!
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 55
+\par }{\f37\fs20\insrsid13843573 118. Answer: Compiler error : undefined symbol some
+\par Explanation:
+\par This is a very simple example for conditional compilation. The
+\par name something is not already known to the compiler
+\par making the declaration
+\par int some = 0;
+\par effectively removed from the source code.
+\par 119. Answer: 0 0
+\par Explanation
+\par This code is to show that preprocessor expressions are not the
+\par same as the ordinary expressions. If a name is not
+\par known the preprocessor treats it to be equal to zero.
+\par 120. Answer
+\par 1
+\par Explanation
+\par This is due to the close relation between the arrays and
+\par pointers. N dimensional arrays are made up of (N-1)
+\par dimensional arrays.
+\par arr2D is made up of a 3 single arrays that contains 3
+\par integers each .
+\par The name arr2D refers to the beginning of all the 3 arrays.
+\par *arr2D refers to the start of the first 1D array (of
+\par 3 integers) that is the same address as arr2D. So the
+\par expression (arr2D == *arr2D) is true (1).
+\par Similarly, *arr2D is nothing but *(arr2D + 0), adding a zero
+\par doesn\rquote t change the value/meaning. Again arr2D[0] is
+\par the another way of telling *(arr2D + 0). So the
+\par expression (*(arr2D + 0) == arr2D[0]) is true (1).
+\par Since both parts of the expression evaluates to true the result
+\par is true(1) and the same is printed.
+\par 121. Answer: You can answer this if you know how values
+\par are represented in memory
+\par Explanation
+\par ~ (tilde operator or bit-wise negation operator) operates on 0
+\par to produce all ones to fill the space for an integer.
+\par \endash 1 is represented in unsigned value as all 1\rquote s and so
+\par both are equal.
+\par 122. Answer: x = 20 y = 10
+\par Explanation
+\par This is one way of swapping two values. Simple checking will
+\par help understand this.
+\par 123.Answer:
+\par b
+\par }{\f36\insrsid13843573 arr2D
+\par arr2D[1]
+\par arr2D[2]
+\par arr2D[3]
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 56
+\par }{\f37\fs20\insrsid13843573 124. Answer: Compiler error: Lvalue required in
+\par function main
+\par Explanation:
+\par ++i yields an rvalue. For postfix ++ to operate an lvalue is
+\par required.
+\par 125. Answer: b
+\par Explanation:
+\par There is no difference between the expression ++*(p++) and
+\par ++*p++. Parenthesis just works as a visual clue for
+\par the reader to see which expression is first
+\par evaluated.
+\par 126. Answer: bye
+\par Explanation:
+\par int (* ptr[3])() says that ptr is an array of pointers to
+\par functions that takes no arguments and returns the
+\par type int. By the assignment ptr[0] = aaa; it means
+\par that the first function pointer in the array is
+\par initialized with the address of the function aaa.
+\par Similarly, the other two array elements also get
+\par initialized with the addresses of the functions bbb
+\par and ccc. Since ptr[2] contains the address of the
+\par function ccc, the call to the function ptr[2]() is
+\par same as calling ccc(). So it results in printing
+\par "bye".
+\par 127. Answer: 1
+\par Explanation: The expression can be treated as i = (++i==6),
+\par because == is of higher precedence than = operator.
+\par In the inner expression, ++i is equal to 6 yielding
+\par true(1). Hence the result.
+\par 128. Answer: A
+\par Explanation:
+\par Due to the assignment p[1] = \lquote c\rquote  the string becomes, \'93%c\\n\'94.
+\par Since this string becomes the format string for
+\par printf and ASCII value of 65 is \lquote A\rquote , the same gets
+\par printed.
+\par 129. Answer: abc is a ptr to a function which takes 2
+\par parameters .(a). an integer variable.(b). a
+\par ptrto a funtion which returns void. the return type
+\par of the function is void.
+\par Explanation: Apply the clock-wise rule to find the result.
+\par 130. Answer: No output
+\par Explanation:
+\par Ending the string constant with \\0 explicitly makes no
+\par difference. So \'93some\'94 and \'93some\\0\'94 are equivalent.
+\par So, strcmp returns 0 (false) hence breaking out of
+\par the while loop.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 57
+\par }{\f37\fs20\insrsid13843573 131. Answer: \'93Strings are not equal\'94
+\par \'93Strings are not equal\'94
+\par Explanation:
+\par If a string constant is initialized explicitly with characters,
+\par \lquote \\0\rquote  is not appended automatically to the string.
+\par Since str1 doesn\rquote t have null termination, it treats
+\par whatever the values that are in the following
+\par positions as part of the string until it randomly
+\par reaches a \lquote \\0\rquote . So str1 and str2 are not the same,
+\par hence the result.
+\par 132. Answer: Compiler Error: Lvalue
+\par required.
+\par Explanation:
+\par As we know that increment operators return rvalues and hence
+\par it cannot appear on the left hand side of an
+\par assignment operation.
+\par 133. Answer: garbage-value 0
+\par Explanation:
+\par The memory space allocated by malloc is uninitialized, whereas
+\par calloc returns the allocated memory space initialized
+\par to zeros.
+\par 134. Answer: 32767
+\par Explanation:
+\par Since i is static it is initialized to 0. Inside the while loop
+\par the conditional operator evaluates to false,
+\par executing i--. This continues till the integer value
+\par rotates to positive value (32767). The while
+\par condition becomes false and hence, comes out of the
+\par while loop, printing the i value.
+\par 135. Answer: 10 10
+\par Explanation:
+\par The Ternary operator ( ? : ) is equivalent for
+\par if-then-else statement. So the question can be
+\par written as:
+\par if(i,j)
+\par \{
+\par if(i,j)
+\par j = i;
+\par else
+\par j = j;
+\par \}
+\par else
+\par j = j;
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 58
+\par }{\f37\fs20\insrsid13843573 136. Answer:
+\par 1. 'const' applies to char * rather than 'a' ( pointer to a
+\par constant char )
+\par *a='F' : illegal
+\par a="Hi" : legal
+\par 2. 'const' applies to 'a' rather than to the value of a
+\par (constant pointer to char )
+\par *a='F' : legal
+\par a="Hi" : illegal
+\par 4. Same as 1.
+\par 137. Answer: 1 10
+\par Explanation:
+\par The expression can be written as i=(i&=(j&&10)); The inner
+\par expression (j&&10) evaluates to 1 because j==10. i is
+\par 5. i = 5&1 is 1. Hence the result.
+\par 138. Answer: 4 1
+\par Explanation:
+\par The boolean expression needs to be evaluated only till the
+\par truth value of the expression is not known. j is not
+\par equal to zero itself means that the expression\rquote s
+\par truth value is 1. Because it is followed by || and
+\par true || (anything) => true where (anything) will not
+\par be evaluated. So the remaining expression is not
+\par evaluated and so the value of i remains the same.
+\par Similarly when && operator is involved in an expression, when
+\par any of the operands become false, the whole
+\par expression\rquote s truth value becomes false and hence the
+\par remaining expression will not be evaluated.
+\par false && (anything) => false where (anything) will
+\par not be evaluated.
+\par 139. Answer: Compier Error: '&' on register variable
+\par Rule to Remember:
+\par & (address of ) operator cannot be applied on
+\par register variables.
+\par 140. Answer: Compiler Error: switch expression not
+\par integral
+\par Explanation:
+\par Switch statements can be applied only to integral
+\par types.
+\par 141. Answer: Linker Error : Unresolved external symbol
+\par i
+\par Explanation:
+\par The identifier i is available in the inner block and so using
+\par extern has no use in resolving it.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 59
+\par }{\f37\fs20\insrsid13843573 142. Answer: 16 16 16
+\par Explanation:
+\par f1 and f2 both refer to the same memory location a. So changes
+\par through f1 and f2 ultimately affects only the value
+\par of a.
+\par 143. Answer: sizeof(p) = 2, sizeof(*p) = 1,
+\par strlen(p) = 4
+\par sizeof(a) = 5, strlen(a) = 4
+\par Explanation:
+\par sizeof(p) => sizeof(char*) => 2
+\par sizeof(*p) => sizeof(char) => 1
+\par Similarly,
+\par sizeof(a) => size of the character array => 5
+\par When sizeof operator is applied to an array it returns the
+\par sizeof the array and it is not the same as the sizeof
+\par the pointer variable. Here the sizeof(a) where a is
+\par the character array and the size of the array is 5
+\par because the space necessary for the terminating NULL
+\par character should also be taken into account.
+\par 144. Answer: 10
+\par Explanation:
+\par The size of integer array of 10 elements is 10 * sizeof(int).
+\par The macro expands to sizeof(arr)/sizeof(int) => 10 *
+\par sizeof(int) / sizeof(int) => 10.
+\par 145. Answer: 1
+\par Explanation:
+\par Arrays cannot be passed to functions as arguments and only the
+\par pointers can be passed. So the argument is equivalent
+\par to int * array (this is one of the very few places
+\par where [] and * usage are equivalent). The return
+\par statement becomes, sizeof(int *)/ sizeof(int) that
+\par happens to be equal in this case.
+\par 146. Answer:
+\par 1 1 1 1
+\par 2 4 2 4
+\par 3 7 3 7
+\par 4 2 4 2
+\par 5 5 5 5
+\par 6 8 6 8
+\par 7 3 7 3
+\par 8 6 8 6
+\par 9 9 9 9
+\par Explanation:
+\par *(*(p+i)+j) is equivalent to p[i][j].
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 60
+\par }{\f37\fs20\insrsid13843573 147. Answer: x=10 y=8
+\par Explanation:
+\par Using ^ like this is a way to swap two variables without using
+\par a temporary variable and that too in a single
+\par statement.
+\par Inside main(), void swap(); means that swap is a function that
+\par may take any number of arguments (not no arguments)
+\par and returns nothing. So this doesn\rquote t issue a compiler
+\par error by the call swap(&x,&y); that has two
+\par arguments.
+\par This convention is historically due to pre-ANSI style (referred
+\par to as Kernighan and Ritchie style) style of function
+\par declaration. In that style, the swap function will be
+\par defined as follows,
+\par void swap()
+\par int *a, int *b
+\par \{
+\par *a ^= *b, *b ^= *a, *a ^= *b;
+\par \}
+\par where the arguments follow the (). So naturally the declaration
+\par for swap will look like, void swap() which means the
+\par swap can take any number of arguments.
+\par 148. Answer: 1 1
+\par Explanation:
+\par The integer value 257 is stored in the memory as, 00000001
+\par 00000001, so the individual bytes are taken by
+\par casting it to char * and get printed.
+\par 149. Answer: 2 1
+\par Explanation:
+\par The integer value 257 can be represented in binary as, 00000001
+\par 00000001. Remember that the INTEL machines are
+\par \lquote small-endian\rquote  machines. Small-endian means that the
+\par lower order bytes are stored in the higher memory
+\par addresses and the higher order bytes are stored in
+\par lower addresses. The integer value 258 is stored in
+\par memory as: 00000001 00000010.
+\par 150. Answer: 556
+\par Explanation:
+\par The integer value 300 in binary notation is: 00000001
+\par 00101100. It is stored in memory (small-endian) as:
+\par 00101100 00000001. Result of the expression *++ptr =
+\par 2 makes the memory representation as: 00101100
+\par 00000010. So the integer corresponding to it is
+\par 00000010 00101100 => 556.
+\par 151. Answer: 0
+\par Explanation:
+\par After \lquote ptr\rquote  reaches the end of the string the value pointed by
+\par \lquote str\rquote  is \lquote \\0\rquote . So the value of \lquote str\rquote  is less than
+\par that of \lquote least\rquote . So the value of \lquote least\rquote  finally is
+\par 0.
+\par 152. Answer: (char*(*)( )) (*ptr[N])( );
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 61
+\par }{\f37\fs20\insrsid13843573 153. Answer: Compiler Error: Undefined structure date
+\par Explanation:
+\par Inside the struct definition of \lquote student\rquote  the member of type
+\par struct date is given. The compiler doesn\rquote t have the
+\par definition of date structure (forward reference is
+\par not allowed in C in this case) so it issues an error.
+\par 154. Answer: Compiler Error: Undefined structure date
+\par Explanation:
+\par Only declaration of struct date is available inside the
+\par structure definition of \lquote student\rquote  but to have a
+\par variable of type struct date the definition of the
+\par structure is required.
+\par 155. Explanation:
+\par fread reads 10 records and prints the names successfully. It
+\par will return EOF only when fread tries to read another
+\par record and fails reading EOF (and returning EOF). So
+\par it prints the last record again. After this only the
+\par condition feof(fp) becomes false, hence comes out of
+\par the while loop.
+\par 156. Answer: No
+\par Explanation:
+\par Functions can only pass pointers and not arrays. The numbers
+\par that are allowed inside the [] is just for more
+\par readability. So there is no difference between the
+\par two declarations.
+\par 157. Answer & Explanation:
+\par If the body of the loop never executes p is assigned no
+\par address. So p remains NULL where *p =0 may result in
+\par problem (may rise to runtime error \'93NULL pointer
+\par assignment\'94 and terminate the program).
+\par 158. Answer & Explanation:
+\par assert macro should be used for debugging and finding out bugs.
+\par The check s != NULL is for error/exception handling
+\par and for that assert shouldn\rquote t be used. A plain if and
+\par the corresponding remedy statement has to be given.
+\par 159. Answer & Explanation:
+\par Assert macro is used for debugging and removed in release
+\par version. In assert, the experssion involves sideeffects.
+\par So the behavior of the code becomes
+\par different in case of debug version and the release
+\par version thus leading to a subtle bug.
+\par Rule to Remember:
+\par Don\rquote t use expressions that have side-effects in assert
+\par statements.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 62
+\par }{\f37\fs20\insrsid13843573 160. Answer: Undefined behavior
+\par Explanation:
+\par The second statement results in undefined behavior because it
+\par points to some location whose value may not be
+\par available for modification. This type of pointer in
+\par which the non-availability of the implementation of
+\par the referenced location is known as 'incomplete
+\par type'.
+\par 161. Answer: No output
+\par Explanation:
+\par The else part in which the printf is there becomes the else for
+\par if in the assert macro. Hence nothing is printed.
+\par The solution is to use conditional operator instead of if
+\par statement,
+\par #define assert(cond) ((cond)?(0): (fprintf (stderr, "assertion
+\par failed: \\ %s, file %s, line %d \\n",#cond,
+\par __FILE__,__LINE__), abort()))
+\par Note:
+\par However this problem of \'93matching with nearest else\'94 cannot be
+\par solved by the usual method of placing the if
+\par statement inside a block like this,
+\par #define assert(cond) \{ \\
+\par if(!(cond)) \\
+\par (fprintf(stderr, "assertion failed: %s, file %s, line %d
+\par \\n",#cond,\\
+\par __FILE__,__LINE__), abort()) \\
+\par \}
+\par 162. Answer: No
+\par Explanation:
+\par Is it not legal for a structure to contain a member that is of
+\par the same
+\par type as in this case. Because this will cause the structure
+\par declaration to be recursive without end.
+\par 163. Answer: Yes.
+\par Explanation:
+\par *b is a pointer to type struct a and so is legal. The compiler
+\par knows, the size of the pointer to a structure even
+\par before the size of the structure
+\par is determined(as you know the pointer to any type is of same
+\par size). This type of structures is known as \lquote selfreferencing\rquote 
+\par structure.
+\par 164. Answer: No
+\par Explanation:
+\par The typename aType is not known at the point of declaring the
+\par structure (forward references are not made for
+\par typedefs).
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 63
+\par }{\f37\fs20\insrsid13843573 165. Answer: Yes
+\par Explanation:
+\par The typename aType is known at the point of declaring the
+\par structure, because it is already typedefined.
+\par 166. Answer: No
+\par Explanation:
+\par When the declaration,
+\par typedef struct a aType;
+\par is encountered body of struct a is not known. This is known as
+\par \lquote incomplete types\rquote .
+\par 167. Answer :
+\par sizeof (void *) = 2
+\par sizeof (int *) = 2
+\par sizeof (double *) = 2
+\par sizeof(struct unknown *) = 2
+\par Explanation:
+\par The pointer to any type is of same size.
+\par 168. Answer & Explanation:
+\par The second one is better because gets(inputString) doesn't know
+\par the size of the string passed and so, if a very big
+\par input (here, more than 100 chars) the charactes will
+\par be written past the input string. When fgets is used
+\par with stdin performs the same operation as gets but is
+\par safe.
+\par 169. Answer & Explanation:
+\par Prefer the first one. If the str contains any format
+\par characters like %d then it will result in a subtle
+\par bug.
+\par 170. Answer: Compiler Error: \'93Unexpected end of file in
+\par comment started in line 5\'94.
+\par Explanation:
+\par The programmer intended to divide two integers, but by the
+\par \'93maximum munch\'94 rule, the compiler treats the
+\par operator sequence / and * as /* which happens to be
+\par the starting of comment. To force what is intended by
+\par the programmer,
+\par int k = *ip/ *jp;
+\par // give space explicity separating / and *
+\par //or
+\par int k = *ip/(*jp);
+\par // put braces to force the intention
+\par will solve the problem.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 64
+\par }{\f37\fs20\insrsid13843573 171. Answer: Implementaion dependent
+\par Explanation:
+\par The char type may be signed or unsigned by default. If it is
+\par signed then ch++ is executed after ch reaches 127 and
+\par rotates back to -128. Thus ch is always smaller than
+\par 127.
+\par 172. Answer: Yes
+\par Explanation:
+\par The pointer ptr will point at the integer in the memory
+\par location 0x400.
+\par 173. Answer: Compiler error: Too many
+\par initializers
+\par Explanation:
+\par The array a is of size 4 but the string constant requires 6
+\par bytes to get stored.
+\par 174. Answer: HELL%@!~@!@???@~~!
+\par Explanation:
+\par The character array has the memory just enough to hold the
+\par string \'93HELL\'94 and doesnt have enough space to store
+\par the terminating null character. So it prints the HELL
+\par correctly and continues to print garbage values till
+\par it accidentally comes across a NULL character.
+\par 175 Answer: Compiler error: Cannot increment a void
+\par pointer
+\par Explanation:
+\par Void pointers are generic pointers and they can be used only
+\par when the type is not known and as an intermediate
+\par address storage type. No pointer arithmetic can be
+\par done on it and you cannot apply indirection operator
+\par (*) on void pointers.
+\par 176.Answer:
+\par 177. Answer: Variable length argument lists
+\par 178. Answer: string constant
+\par Explanation:
+\par The program suffers no problem and gives the output correctly
+\par because the character constants are stored in
+\par code/data area and not allocated in stack, so this
+\par doesn\rquote t lead to dangling pointers.
+\par }{\f38\fs22\insrsid13843573 C FAQs CRANES VARSITY
+\par }{\f36\fs20\insrsid13843573 65
+\par }{\f37\fs20\insrsid13843573 179. Answer: Garbage values.
+\par Explanation:
+\par Both the functions suffer from the problem of dangling
+\par pointers. In someFun1() temp is a character array and
+\par so the space for it is allocated in heap and is
+\par initialized with character string \'93string\'94. This is
+\par created dynamically as the function is called, so is
+\par also deleted dynamically on exiting the function so
+\par the string data is not available in the calling
+\par function main() leading to print some garbage values.
+\par The function someFun2() also suffers from the same
+\par problem but the problem can be easily identified in
+\par this case.
+\par 180. Answer: Behavior is implementation
+\par dependent.
+\par Explanation:
+\par The detail if the char is signed/unsigned by default is
+\par implementation dependent. If the implementation
+\par treats the char to be signed by default the program
+\par will print \endash 128 and terminate. On the other hand if
+\par it considers char to be unsigned by default, it goes
+\par to infinite loop.
+\par Rule:
+\par You can write programs that have implementation dependent
+\par behavior. But dont write programs that depend on such
+\par behavior.
+\par 181. Answer
+\par Definition.
+\par x is a pointer to array of(size 10) integers.
+\par Apply clock-wise rule to find the meaning of this definition.
+\par 182. Ans. (c)
+\par 183. Ans. (a)
+\par 184. Ans. (b)
+\par 185. Ans. (d)
+\par 186. Ans. (c)
+\par 187. Ans. (a)
+\par 188. Ans. (a)
+\par 189. Ans. (iii)
+\par 190. Ans. (c)}{\f38\fs20\insrsid13843573 
+\par }{\f37\fs32\insrsid13843573 
+\par 
+\par 
+\par 
+\par 
+\par \tab \tab \tab \tab \tab \tab FAQ -3 
+\par Part I ANSWERS
+\par }{\f37\insrsid13843573 1. (nil)
+\par 2. 1
+\par 3. 1 2 3
+\par 4. Define all of the above
+\par 5. 1 2 4 4 4 4
+\par 6. 8 8
+\par 7. *, --, ++
+\par 8. Sunil Gavaskar 150.0
+\par 9. 11
+\par 10. Compilation error.
+\par 11. It goes up by the size of a pointer
+\par 12. Garbage
+\par 13. free( nPtr->firstname ); free( nPtr->lastname );
+\par free(nPtr);
+\par 14. void swap(float **, float **);
+\par 15. 1 2 4
+\par 16. Keep the faith Garbage
+\par 17. 1 2 3
+\par 18. 0x0000
+\par 19. 4 4 4
+\par 20. 2
+\par 21. 2
+\par 22. 1
+\par 23. 3
+\par 24. It\rquote s a compound literal. num is pointer to the
+\par compound literal of type integer array.
+\par *p = 1
+\par *q = 5
+\par i = 10}{\f36\fs20\insrsid13843573 
+\par }{\f37\insrsid13843573 (q \endash p) = 1
+\par 25. Array of 10 pointers to function which take two
+\par pointers to char as argument returning pointer to
+\par int.
+\par 26. Sizeof(a)/sizeof(char *) = 16/4 = 4.
+\par 27. 2 3 (Pointers in swap functions are swapped, not
+\par the values!)
+\par 28. Ans. %s is string is string
+\par 29. Runtime error
+\par 30. UINT_MAX
+\par 31. 100 200
+\par 32. 8
+\par 33. 4 4
+\par 34. array[0]='Y'
+\par array[1]='E'
+\par array[2]='S'
+\par array[3]= '\\0'
+\par 35. Need not return any value.
+\par 36. 7
+\par 37. They are global.
+\par 38. 15
+\par 39. b
+\par 40. 1
+\par 41. 2
+\par 42. *(*ab+5)
+\par 43. Stack
+\par 44. return(1, 2, 3);
+\par 45. const char *
+\par 46. 4
+\par 47. *(*(a+2)+4)
+\par 48. (b)
+\par 49. Compiler Error
+\par 50. An empty String
+\par 51. 57 94
+\par 52. 12 1 1
+\par 53. 11 16
+\par 54. Ony one time "Ramco Systems" will be printed
+\par 55. 45
+\par 56. 43.33
+\par 57. Compiler Error
+\par 58. Error: cast to union type from type not present
+\par in union
+\par 59. A new line is printed
+\par 60. 5
+\par 61. Four is Z
+\par 62. 5 20 5
+\par 63. 1000 6.33
+\par 64. 4.50 4.57 13.57
+\par 65. Floating point exception
+\par 66. Numbers are -25 25
+\par 67. invalid lvalue in assignment
+\par 68. Sum = 39
+\par 69. 6
+\par 70. 5 5 5 5 5
+\par 71. 100 99
+\par 72. (100,C,-5233182629565562780)
+\par 73. Can\rquote t modify read-only location
+\par 74. i = Garbage
+\par 75. 3
+\par 76. none
+\par 77. Segmentation fault
+\par 78. "file1.h only".
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid1051041 {\f37\insrsid1051041 79. Ans : 8. if integer takes 2 byte.
+\par 80. Ans : Compilation error. Since you can't assign a
+\par String Constant to Char variable.
+\par 81. Compiler Error: invalid lvalue assignment
+\par 82. return ( (a > b) ? a : b );
+\par 83. b)
+\par 84. c)
+\par 85. a)
+\par 86. a)
+\par 87. c
+\par 88. b
+\par 89. Warning
+\par 90. b
+\par 91. c
+\par 92. c
+\par 93. d
+\par 94. b
+\par 95. a
+\par 96. b
+\par 97. c
+\par 98. All
+\par 99. 14
+\par 100. a
+\par 101. b
+\par 102. b
+\par 103. a
+\par 104. c
+\par 105. b
+\par 106. ii
+\par 107. 2 arg1}{\f37\fs20\insrsid1051041 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\rin0\lin0\itap0\pararsid13843573 {\f37\insrsid13843573 108. b
+\par 109. a
+\par 110. d
+\par 111. c
+\par 112. a
+\par 113. d
+\par 114. d
+\par 115. c
+\par 116. c
+\par 117. d
+\par 118. c
+\par 119. b
+\par 120. c
+\par 121. a
+\par 122. a
+\par 123. Error inside the structure
+\par 124. x is array of function returning pointer to int
+\par (Not possible to implement)
+\par 125. Wrong
+\par 126. 4
+\par 127. Ans. no error. But It will over writes on same
+\par file.
+\par 128. A
+\par 129. 10 5 0
+\par 130. 10 5 3 3
+\par 131. 12
+\par 132. 13 11 11
+\par 133. Compiler Error
+\par 134. 12..6..11
+\par 135. left is 10, right is 11, front is 100, back is}{\f37\insrsid13843573  }{\f37\insrsid13843573 101}{\f37\insrsid13843573\charrsid13843573 
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\f37\fs20\insrsid1051041 
+\par }}

@@ -1,0 +1,667 @@
+1)what will be the output?
+
+#include<stdio.h>
+void abc(int ,int);
+void main()
+{
+      int i=5,j=10;
+      abc(i,j);
+      printf("%d..%d",i,j);
+}
+void abc(int i,int j)
+{
+      i=i+j;
+      j=i-j;
+      i=i-j;
+      printf("%d...%d",i,j);
+}
+
+
+
+2)what will be output?
+#include<stdio.h>
+void main()
+{
+      void *p="hello";
+      printf("%s",p);
+}
+
+
+
+3)#include<stdio.h>
+void abc(int *,int *);
+void main()
+{
+      int i=5,j=10;
+      abc(&i,&j);
+      printf("%d..%d",i,j);
+}
+void abc(int *i,int *j)
+{
+      *i=*i+*j;
+      *j=*i-*j;
+      *i=*i-*j;
+      printf("%d...%d",i,j);
+}
+
+
+
+4)#include<stdio.h>
+void main()
+{
+      if(0,1)
+            printf("hello");
+}
+
+ans)hello
+
+5)#include<stdio.h>
+void main()
+{
+      if(1,0)
+            printf("hello");
+}
+
+ans)does not print nothing
+
+
+
+6)#include<stdio.h>
+void main()
+{
+      int i=3;
+        while(i--)
+      {
+         int i=100;
+         i--;
+         printf("%d",i);
+         }
+}
+
+and)infinite loop
+
+
+7)what will be output?
+void main()
+{
+      int a=10;
+      int b=20;
+      char x=1;
+      char y=0;
+   if(a,b,x,y)
+    printf("hello");
+}
+  ans)does not print anything
+
+
+
+
+
+8)#what will be output?
+  main()
+  {
+     const int i=100;
+     i++;
+     printf("%d",i);
+  }
+
+
+ans)error reasons is cant change the const value
+
+
+9)WHAT WILL BE OUTPUT?
+#include<stdio.h>
+#define COMBINE(x,y) (x##y)
+void main()
+{
+      int i;
+      i=COMBINE(10+5,5+10);
+      printf("%d",i);
+}
+
+
+ans)75
+
+
+10)
+#include<stdio.h>
+#define COMBINE(x,y) (x##y)
+void main()
+{
+      int i;
+      i=COMBINE(200,5);
+      printf("%d",i);
+}
+
+ans)2005
+
+
+11)
+#include<stdio.h>
+void abc(int);
+void main()
+{
+      abc((200,100));
+}
+void abc(int i)
+{
+      printf("%d",i);
+}
+
+
+ans 100
+
+12)#include<stdio.h>
+void main()
+{
+      printf("%d...%d",sizeof(float),sizeof(double));
+}
+
+ans) 4,8
+
+
+13)#include<stdio.h>
+#define SQUARE(x) (x)*(x)
+void main()
+{
+      int i=10,j=5,k=0;
+      k=SQUARE(i-j);
+      printf("%d",k);
+}
+
+
+ans)25
+
+
+
+14)#include<stdio.h>
+#define SQUARE(x) (x*x)
+void main()
+{
+      int i=10,j=5,k=0;
+      k=SQUARE(i-j);
+      printf("%d",k);
+}
+
+
+ans)-45
+
+
+15)#include<stdio.h>
+void main()
+{
+      int i,j=10;
+      i=20/2*j;
+      printf("%d",i);
+}
+
+
+ans)100
+
+
+16)16.
+    struct a
+    {
+    int a;
+    char b;
+    int c;
+    }
+
+    union b
+    {
+    char a;
+    int b;
+    int c;
+    };
+    which is correct .
+    a. size of a is always diff. form size of b.(ans.)
+    b. size of a is always same  form size of b.
+    c. we can't say anything because of not-homogeneous (not in ordered)
+    d. size of a can be same if ...
+
+
+   ans a
+
+
+17)    #define g(a,b) a*b
+#include<stdio.h>
+
+    main()
+    {
+
+          int m;
+            int k;
+            k=2*g(4,5);
+
+
+    printf("\n m is %d",k);
+    }
+
+output is 40
+
+
+18)#define f(a,b) a+b
+    #define g(a,b) a*b
+
+    main()
+    {
+
+    int m;
+    m=2*f(3,g(4,5));
+    printf("\n m is %d",m);
+    }
+
+ans 26
+
+
+19)     main()
+    {
+    int i;
+    fork();
+    fork();
+    fork();
+    printf("----");
+    }
+
+    how many times the printf will be executed .
+    a.3
+    b. 6
+    c.5
+    d. 8
+ans)8
+
+
+20)#include<stdio.h>
+void main()
+{
+      char *p="alqc";
+      printf("%c....",++*(p++));
+      printf("%c...",*++p);
+}
+
+output is m...q
+
+
+
+21)#include<stdio.h>
+void main()
+{
+      char **p=&"alqc";
+      printf("%c....",++*(p++));
+
+}
+
+
+output is error
+
+22)#include<stdio.h>
+void main()
+{
+      printf("%d",3|2);
+
+}
+
+
+output is 3
+
+
+23)#include<stdio.h>
+void main()
+{
+      printf("%d",3&2);
+
+}
+
+output is 2
+
+
+24)#include<stdio.h>
+void main()
+{
+      printf("%d",3||2);
+
+}
+
+output is 1
+
+25)#include<stdio.h>
+void main()
+{
+      printf("%d",1&&2);
+
+}
+
+output is 0
+
+
+26)#include<stdio.h>
+void main()
+{
+      printf("%d",3>2);
+
+}
+output is 1
+
+
+27)#include<stdio.h>
+void main()
+{
+      printf("%d",3<2);
+
+}
+
+output is 1
+
+
+28)#include<stdio.h>
+void main()
+{
+      printf("%d",3>>2);
+
+}
+
+output is 0
+
+
+29)#include<stdio.h>
+void main()
+{
+      printf("%d",3<<2);
+
+}
+
+output is 12
+
+30)#include<stdio.h>
+void main()
+{
+      printf("%d",3>>2?100:200);
+
+}
+
+output is 200
+
+
+31)#include<stdio.h>
+void main()
+{
+      int i=0,j=1;
+      if(i && j++)
+      printf("%d",j);
+
+}
+
+no output
+
+32)#include<stdio.h>
+void main()
+{
+      int i=0,j=1;
+      if(i || j++)
+      printf("%d",j);
+
+}
+
+output is 2
+
+
+33)#include<stdio.h>
+void main()
+{
+
+      printf("%d",3^2);
+
+}
+
+output is 1
+
+
+34)#include<stdio.h>
+int abc(void);
+void main()
+{
+
+      int i;
+      i=abc();
+      printf("%d...",i);
+      i=abc();
+      printf("%d",i);
+
+}
+
+int abc()
+{
+      return 10;
+      return 100;
+}
+
+
+
+output is 10...10
+
+
+35)#include<stdio.h>
+void main()
+{
+
+      int i;
+      printf("%d",i^i);
+}
+
+output is 0
+
+
+36)#include<stdio.h>
+void main()
+{
+
+      int i;
+      for(i=0;i<=10;i++,printf("%d",i));
+}
+
+
+output is 1,2....11
+
+
+37)#include<stdio.h>
+void main()
+{
+
+      int a[5];
+      3[a]=10;
+      printf("%d",*(a+3));
+}
+
+
+output is 10
+
+38)#include<stdio.h>
+void main()
+{
+
+      struct{
+            int i;
+      }xyz;
+      (*xyz)->i=10;
+      printf("%d",xyz.i);
+}
+
+
+program will not compile
+
+
+39)#include<stdio.h>
+void main()
+{
+
+      struct{
+            int i;
+      }xyz;
+      (&xyz)->i=10;
+      printf("%d",xyz.i);
+}
+
+
+
+output is 10
+
+
+40)#include<stdio.h>
+void main()
+{
+
+      struct{
+            int i;
+      }xyz;
+      &xyz->i=10;
+      printf("%d",xyz.i);
+}
+
+
+program will not compile
+
+
+
+41)#include<stdio.h>
+void main()
+{
+      int i=10;
+      if(i==--10)
+            printf("ten");
+}
+
+
+output is error
+
+
+
+42)#include<stdio.h>
+void main()
+{
+      int i=0;
+      switch(i=i+1)
+      {
+      case 0:printf("%d\n",i);
+      case 1:printf("%d",i);break;
+      }
+}
+
+
+output is 1
+
+
+43)#include<stdio.h>
+void main()
+{
+      int i=0;
+      switch(printf("k"))
+      {
+      case 0:printf("%d\n",i);break;
+      case 1:printf("%d",++i);break;
+      }
+}
+
+
+output is k and 1
+
+
+44)#include<stdio.h>
+void main()
+{
+      int i=0;
+      switch(1,1,0)
+      {
+      case 0:printf("%d\n",i);break;
+      case 1:printf("%d",++i);break;
+      }
+}
+
+output is 0
+
+
+45)#include<stdio.h>
+void main()
+{
+      int i=0;
+      switch(i)
+      {
+      case 0:printf("%d\n",i);continue;
+      case 1:printf("%d",++i);break;
+      }
+}
+
+output is error we cant use continue
+
+
+46)#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+void main()
+{
+      int i=0;
+      switch(i)
+      {
+      case 0:printf("%d\n",i);exit(0);
+      case 1:printf("%d",++i);break;
+      }
+}
+
+
+output is 0
+
+
+47)#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+void main()
+{
+      int i=0;
+      switch(printf("k"),printf("ku"))
+      {
+      case 1:printf("%d\n",i);break;
+      case 2:printf("%d",++i);break;
+      }
+}
+
+
+k ku 1
+
+
+48)#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#define int char
+void main()
+{
+      int i=65;
+      printf("%d",sizeof(i));
+}
+
+
+
+output is 1
+
+
+49)#include<stdio.h>
+#include<conio.h>
+void main()
+{
+      char a[4][4]={"abc","pqr","xyz"};
+      printf("%c\n",a[2][2]);
+}
+
+
+output is z
+
+
+
+50)#include<stdio.h>
+#include<conio.h>
+void main()
+{
+      char a[4][4]={"abc","pqr","xyz"};
+      printf("%s\n",a);
+}
+
+
+output is abc

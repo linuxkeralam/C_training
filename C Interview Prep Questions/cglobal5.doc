@@ -1,0 +1,91 @@
+
+     1>
+            int A=1,B=2;
+            if(A==B < printf("Hello "))
+                printf("world\n");
+             else
+                printf("Bangalore\n");
+
+                What is the o/p?
+
+             a> world  b> Hello bangalore c> bangalore  d> Hello world.
+
+             ans > d> Hello world.
+
+
+      2>
+
+                main()
+                {
+                        int i;
+                        for(i=0; i< 10; i++)
+                        {
+                                int j=10;
+                                j++;
+                                printf("j= %d\n", j);
+                        }
+                 }
+
+                 what is o/p ?
+
+               a> 10 to 19  b> error j undeclared c> 10 times 11 d> 10 - 18
+
+
+              ans> c> 10 times 11.
+
+
+        3>
+                union test{
+                     int a;
+                     union test *p;
+                   };
+                main(){
+                  union test q;
+                  printf(" a= %d\n ", q.a);
+                 }
+                 what is o/p?
+
+               a> 0 b> syntax error c> garbage value  d>run time error
+
+             ans > c
+
+
+         4>
+
+                register int a,b;
+                main(){
+                        for(a=0 ; a<5 ; a++)
+                            b++;
+                      }
+
+                 a> 5  b> 4  c> 0  d> error
+
+                 ans >  d
+
+
+          5>   # define dprint(expr)  printf(" expr= %d \n ", expr)
+
+                main(){
+
+                        int i=10,j=2;
+
+                        dprint(i / j) ;
+                       }
+
+                 a> 5  b > expr= 5  c> i / j= 5   d> error.
+
+                 ans > b.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

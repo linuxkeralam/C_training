@@ -1,0 +1,1683 @@
+
+  C Programming -- Sample Questions
+
+
+      1.
+
+	
+
+
+      Q
+
+	What does the term cast refer to? Why is it used?
+	
+
+
+      A
+
+	Casting is a mechanism built into C that allows the programmer to force
+the conversion of data types. This may be needed because most C
+functions are very particular about the data types they process. A
+programmer may wish to override the default way the C compiler promotes
+data types.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      2.
+
+	
+
+
+      Q
+
+	In arithmetic expressions, to what data type will the C compiler
+promote a character?
+	
+
+
+      A
+
+	It will promote it to an integer unless otherwise directed.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      3.
+
+	
+
+
+      Q
+
+	What is the difference between a statement and a block?
+	
+
+
+      A
+
+	A statement is a single C expression terminated with a semicolon. A
+block is a series of statements, the group of which is enclosed in
+curly-braces.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      4.
+
+	
+
+
+      Q
+
+	Increment the variable next three different ways.
+	
+
+
+      A
+
+	next = next + 1;
+	
+
+
+	
+	
+
+
+	and
+	
+
+
+	
+	
+
+
+	next++;
+	
+
+
+	
+	
+
+
+	and
+	
+
+
+	
+	
+
+
+	next += 1;
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      5.
+
+	
+
+
+      Q
+
+	How is a comment formed in C.
+	
+
+
+      A
+
+	Comments in C begin with a slash followed by an asterisk. Any text may then
+	
+
+
+	appear including newlines. The comment is finished with an asterisk
+followed by a slash. Example:
+	
+
+
+	
+	
+
+
+	/* This is a comment */
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      6.
+
+	
+
+
+      Q
+
+	Can comments be nested?
+	
+
+
+      A
+
+	Not in standard (K&R) C.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      7.
+
+	
+
+
+      Q
+
+	From the standpoint of programming logic, what is the difference
+between a loop with the test at the top, and a loop where the test is at
+the bottom?
+	
+
+
+      A
+
+	If the test is at the bottom, the body of the loop will always be
+executed at least once. When the test is at the top, the body of the
+loop may never be executed.
+	
+
+
+	
+	 
+
+
+      8.
+
+	
+
+
+      Q
+
+	Specify the skeletons of two C loops with the test at the top.
+	
+
+
+      A
+
+	next = 0; /* setup */
+	
+
+
+	
+	
+
+
+	while ( next < max) { /* test */
+	
+
+
+	   printf("Hello "); /* body */
+	
+
+
+	   next++; /* update */
+	
+
+
+	}
+	
+
+
+	
+	
+
+
+	
+	
+
+
+	and
+	
+
+
+	
+	
+
+
+	for ( next = 0; next < max; next++) /* setup,test */
+	
+
+
+	   /* and update */
+	
+
+
+	   printf("Hello"); /* body */
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      9.
+
+	
+
+
+      Q
+
+	Specify a C loop with the test at the bottom.
+	
+
+
+      A
+
+	next = 0; /* setup */
+	
+
+
+	
+	
+
+
+	do {
+	
+
+
+	   printf("Hello"); /* body */
+	
+
+
+	   next++; /* update */
+	
+
+
+	} while ( next < max); /* test */
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      10.
+
+	
+
+
+      Q
+
+	What is the switch statement?
+	
+
+
+      A
+
+	It is C's form of multiway-conditional (a.k.a case statement in Pascal).
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      11.
+
+	
+
+
+      Q
+
+	What does a break statement do? Which control structures use it?
+	
+
+
+      A
+
+	The break statement unconditionally ends the execution of the smallest
+enclosing while, do, for or switch statement.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      12.
+
+	
+
+
+      Q
+
+	In a loop, what is the difference between a break and continue statement?
+	
+
+
+      A
+
+	The break terminates the loop. The continue branches immediately to the
+test portion of the loop.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      13.
+
+	
+
+
+      Q
+
+	Where may variables be defined in C?
+	
+
+
+      A
+
+	Outside a function definition (global scope, from the point of
+definition downward in the source code). Inside a block before any
+statements other than variable declarations (local scope with respect to
+the block).
+	
+
+
+	
+	 
+
+
+      14.
+
+	
+
+
+      Q
+
+	What is the difference between a variable definition and a variable
+declaration?
+	
+
+
+      A
+
+	A definition tells the compiler to set aside storage for the variable.
+A declaration makes the variable known to parts of the program that may
+wish to use it. A variable might be defined and declared in the same
+statement.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      15.
+
+	
+
+
+      Q
+
+	What is the purpose of a function prototype?
+	
+
+
+      A
+
+	A function prototype tells the compiler to expect a given function to
+be used in a given way. That is, it tells the compiler the nature of the
+parameters passed to the function (the quantity, type and order) and the
+nature of the value returned by the function.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      16.
+
+	
+
+
+      Q
+
+	What is type checking?
+	
+
+
+      A
+
+	The process by which the C compiler ensures that functions and
+operators use data of the appropriate type(s). This form of check helps
+ensure the semantic correctness of the program.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      17.
+
+	
+
+
+      Q
+
+	To what does the term storage class refer?
+	
+
+
+      A
+
+	This is a part of a variable declaration that tells the compiler how to
+interpret the variable's symbol. It does not in itself allocate storage,
+but it usually tells the compiler how the variable should be stored.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      18.
+
+	
+
+
+      Q
+
+	List C's storage classes and what they signify.
+	
+
+
+      A
+
+	static Variables are defined in a nonvolatile region of memory such
+that they retain their contents though out the program's execution.
+	
+
+
+	
+	
+
+
+	register Asks the compiler to devote a processor register to this
+variable in order to speed the program's execution. The compiler may not
+comply and the variable looses it contents and identity when the
+function it which it is defined terminates.
+	
+
+
+	
+	
+
+
+	external Tells the compiler that the variable is defined in another module.
+	
+
+
+	
+	
+
+
+	volatile Tells the compiler that other programs will be modifying this
+variable in addition to the program being compiled. For example, an I/O
+device might need write directly into a program or data space.
+Meanwhile, the program itself may never directly access the memory area
+in question. In such a case, we would not want the compiler to
+optimize-out this data area that never seems to be used by the program,
+yet must exist for the program to function correctly in a larger context.
+	
+
+
+	
+	 
+
+
+      19.
+
+	
+
+
+      Q
+
+	State the syntax for the printf() and scanf() functions. State their
+one crucial difference with respect to their parameters.
+	
+
+
+      A
+
+	Where fmtStr tells printf() how to format the variable list that
+follows. var1 through varN may be variables of any base type.
+	
+
+
+	
+	
+
+
+	scanf( fmtStr, &var1, &var2, &varN);
+	
+
+
+	
+	
+
+
+	This routine is the input compliment to printf().
+	
+
+
+	
+	
+
+
+	scanf() requires the address of each variable instead of the variable's
+value (as in printf()). This is subtle source of serious bugs.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      20.
+
+	
+
+
+      Q
+
+	With respect to function parameter passing, what is the difference
+between call-by-value and call-by-reference? Which method does C use?
+	
+
+
+      A
+
+	In the case of call-by-reference, a pointer reference to a variable is
+passed into a function instead of the actual value. The function's
+operations will effect the variable in a global as well as local sense.
+Call-by-value (C's method of parameter passing), by contrast, passes a
+copy of the variable's value into the function. Any changes to the
+variable made by function have only a local effect and do not alter the
+state of the variable passed into the function.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      21.
+
+	
+
+
+      Q
+
+	What is a structure and a union in C?
+	
+
+
+      A
+
+	A structure is an aggregate data type. It combines one or more base or
+aggregate data types into a package that may treated as a whole. A
+structure is like a record in other languages. A union combines two or
+more data types in the same area of storage. The contents of a union may
+be one data type at one time and another type at a different time. A
+union is sometimes called a trick-record.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      22.
+
+	
+
+
+      Q
+
+	Define a structure for a simple name/address record.
+	
+
+
+      A
+
+	struct nameAddr {
+	
+
+
+	   char name[30];
+	
+
+
+	   char addr[30];
+	
+
+
+	   char city[20];
+	
+
+
+	   char state[3];
+	
+
+
+	   char zip[5];
+	
+
+
+	};
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      23.
+
+	
+
+
+      Q
+
+	What does the typedef keyword do?
+	
+
+
+      A
+
+	This keyword provides a short-hand way to write variable declarations.
+It is not a true data typing mechanism, rather, it is syntactic "sugar
+coating."
+	
+
+
+	
+	 
+
+
+      24.
+
+	
+
+
+      Q
+
+	Use typedef to make a short-cut way to declare a pointer to the
+nameAddr structure above. Call it addrPtr.
+	
+
+
+      A
+
+	typedef struct nameAddr *addrPtr;
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      25.
+
+	
+
+
+      Q
+
+	Declare a variable with addrPtr called address.
+	
+
+
+      A
+
+	addrPtr address;
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      26.
+
+	
+
+
+      Q
+
+	Assuming the variable address above, how would one refer to the city
+portion of the record within a C expression?
+	
+
+
+      A
+
+	address->city
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      27.
+
+	
+
+
+      Q
+
+	What is the difference between:
+	
+
+
+      A
+
+	#include <stdio.h>
+	
+
+
+	
+	
+
+
+	and
+	
+
+
+	
+	
+
+
+	#include "stdio.h"
+	
+
+
+	
+	
+
+
+	A They both specify a file for inclusion into the current source file.
+The difference is where the file stdio.h is expected to be. In the case
+of the brackets, the compiler will look in all the default locations. In
+the case of the quotes, the compiler will only look in the current
+directory.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      28.
+
+	
+
+
+      Q
+
+	What is #ifdef used for?
+	
+
+
+      A
+
+	It is used for condition compilation. Specifically the source code
+between #ifdef and #endif (or #else) is compiled if the associated
+symbol is defined to the compiler.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      28.
+
+	
+
+
+      Q
+
+	How do you define a constant in C?
+	
+
+
+      A
+
+	The C language itself has no provision for constants. However, its
+companion program, the preprocessor, can be used to make manifest
+constants. It does this through the use of the #define keyword.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      29.
+
+	
+
+
+      Q
+
+	Why can't you nest structure definitions?
+	
+
+
+      A
+
+	Trick question: You can nest structure definitions.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      30.
+
+	
+
+
+      Q
+
+	Can you nest function definitions?
+	
+
+
+      A
+
+	No. (You can in Pascal, a close relative to C.)
+	
+
+
+	
+	 
+
+
+      31.
+
+	
+
+
+      Q
+
+	What is a forward reference?
+	
+
+
+      A
+
+	It is a reference to a variable or function before it is defined to the
+compiler. The cardinal rule of structured languages is that everything
+must be defined before it can be used. There are rare occasions where
+this is not possible. It is possible (and sometimes necessary) to define
+two functions in terms of each other. One will obey the cardinal rule
+while the other will need a forward declaration of the former in order
+to know of the former's existence. Confused?
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      32.
+
+	
+
+
+      Q
+
+	What are the following and how do they differ: int, long, float and double?
+	
+
+
+      A
+
+	int An integer, usually +/- 215 in magnitude.
+	
+
+
+	
+	
+
+
+	long A larger version of int, usually +/- 231 in magnitude.
+	
+
+
+	
+	
+
+
+	float A single precision real (floating point) number. Magnitude varies.
+	
+
+
+	
+	
+
+
+	double A double precision real number. Magnitude varies.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      33.
+
+	
+
+
+      Q
+
+	Define a macro called SQR which squares a number.
+	
+
+
+      A
+
+	#define SQR(x) (x * x)
+	
+
+
+	
+	
+
+
+	(The parenthesis around "x * x" are extremely important because the
+macro may be expanded into a place where any embedded spaces could cause
+the compiler to misinterpret the expression. The consequences could
+range from a pesky syntax error to wrong answers when the program is
+run.). Moral: The preprocessor does not know C.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      34.
+
+	
+
+
+      Q
+
+	Is it possible to take the square-root of a number in C. Is there a
+square-root operator in C?
+	
+
+
+      A
+
+	Yes. There is no square-root operator; such computation is performed
+though the use of a function.
+	
+
+
+	
+	 
+
+
+      35.
+
+	
+
+
+      Q
+
+	Using fprintf() print a single floating point number right-justified in
+a field of 20 spaces, no leading zeros, and 4 decimal places. The
+destination should be stderr and the variable is called num.
+	
+
+
+      A
+
+	fprintf( stderr, "%-20.4f", num);
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      36.
+
+	
+
+
+      Q
+
+	What is the difference between the & and && operators and the | and ||
+operators?
+	
+
+
+      A
+
+	& and | are bitwise AND and OR operators respectively. They are usually
+used to manipulate the contents of a variable on the bit level. && and
+|| are logical AND and OR operators respectively. They are usually used
+in conditionals.
+	
+
+
+	
+	 
+
+
+      37.
+
+	
+
+
+      Q
+
+	What is the difference between the -> and . operators?
+	
+
+
+      A
+
+	They both provide access to members of a structure or union. They
+differ in that -> is used when the variable is a pointer to a structure
+or union. The dot is used when the variable is itself the structure or
+union. The -> operator combines the pointer dereferencing operator with
+the member access operator; it is syntactic "sugar coating."
+	
+
+
+	
+	
+
+
+	address->city is equivalent to (*address).city.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      38.
+
+	
+
+
+      Q
+
+	What is the symbol for the modulus operator?
+	
+
+
+      A
+
+	% (the percent symbol)
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      39.
+
+	
+
+
+      Q
+
+	From the standpoint of logic, what is the difference between the fragment:
+	
+
+
+	if (next < max)
+	
+
+
+	    next++;
+	
+
+
+	else
+	
+
+
+	    next = 0;
+	
+
+
+	
+	
+
+
+	and the fragment:
+	
+
+
+	
+	
+
+
+	next += (next < max)? (1):(-next);
+	
+
+
+	
+	
+
+
+	A Nothing. They are different ways to express the same logic.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      40.
+
+	
+
+
+      Q
+
+	What does the following fragment do?
+
+while((d=c=getch(),d)!=EOF&&(c!='\t'||c!=' '||c!='\b')) *buff++ = ++c;
+
+	
+
+
+      A
+
+	Do the following until either the end of standard input or the variable
+c takes on the value of a tab, space, or backspace character: Store the
+character that succeeds the character stored in c into the current
+location pointed by buff. Then increment buff to point to the next
+location in memory. Meanwhile, d is assigned the same value as c and it
+is the value of d that is used in the comparison to EOF.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      41.
+
+	
+
+
+      Q
+
+	Is C case sensitive (ie: does C differentiate between upper and lower
+case letters)?
+	
+
+
+      A
+
+	Yes.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      41.
+
+	
+
+
+      Q
+
+	Specify how a filestream called inFile should be opened for random
+reading and writing. the file's name is in fileName.
+	
+
+
+      A
+
+	inFile = fopen( fileName, "r+");
+	
+
+
+	
+	 
+
+
+      42.
+
+	
+
+
+      Q
+
+	What does fopen() return if successful. If unsuccessful?
+	
+
+
+      A
+
+	Upon success fopen() returns a pointer to a filestream. Otherwise it
+returns the value of NULL.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      43.
+
+	
+
+
+      Q
+
+	What is the void data type? What is a void pointer?
+	
+
+
+      A
+
+	The void data type is used when no other data type is appropriate. A
+void pointer is a pointer that may point to any kind of object at all.
+It is used when a pointer must be specified but its type is unknown.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      44.
+
+	
+
+
+      Q
+
+	Declare a pointer called fnc which points to a function that returns an
+unsigned long.
+	
+
+
+      A
+
+	unsigned long (*fnc)();
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      45.
+
+	
+
+
+      Q
+
+	Declare a pointer called pfnc which points to a function that returns a
+pointer to a structure of type nameAddr.
+	
+
+
+      A
+
+	struct nameAddr *(*pfnc)();
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      46.
+
+	
+
+
+      Q
+
+	It is possible for a function to return a character, an integer, and a
+floating point number. Is it possible for a function to return a
+structure? Another function?
+	
+
+
+      A
+
+	No. However, it is possible to return pointers to structures and functions.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      47.
+
+	
+
+
+      Q
+
+	What is the difference between an lvalue and an rvalue?
+	
+
+
+      A
+
+	The lvalue refers to the left-hand side of an assignment expression. It
+must always evaluate to a memory location. The rvalue represents the
+right-hand side of an assignment expression; it may have any meaningful
+combination of variables and constants.
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      48.
+
+	
+
+
+      Q
+
+	Given the decimal number 27, how would one express it as a hexadecimal
+number in C?
+	
+
+
+      A
+
+	0x1B
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      49.
+
+	
+
+
+      Q
+
+	What is malloc()?
+	
+
+
+      A
+
+	This function allocates heap storage for dynamic data structures.
+	
+
+
+	
+	 
+
+
+      50.
+
+	
+
+
+      Q
+
+	What is the difference between malloc() and calloc()?
+	
+
+
+      A
+
+	The malloc() function allocates raw memory given a size in bytes. On
+the other hand, calloc() clears the requested memory to zeros before
+return a pointer to it. (It can also compute the request size given the
+size of the base data structure and the number of them desired.)
+	
+
+
+	
+	
+
+
+	
+	 
+
+
+      51.
+
+	
+
+
+      Q
+
+	What kind of problems was C designed to solve?
+	
+
+
+      A
+
+	C was designed to be a "universal" assembly language. It is used for
+producing system software such as operation systems,
+compilers/interpreters, device drivers, editors, DBMS's and similar
+things. It is not as well suited to application programs.
+
+
+------------------------------------------------------------------------
+©1994 Brett Blatchley <mailto:brettrix@yahoo.com>
+
